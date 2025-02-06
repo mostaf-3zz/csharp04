@@ -4,15 +4,17 @@
     {
         static void Main(string[] args)
         {
-            #region Q2
-
-
-            Console.WriteLine("please enter an intger number");
+            #region Q3
+            Console.WriteLine("please enter a number");
             int.TryParse(Console.ReadLine(), out int Number);
-            for (int i = 1; i <= 12; i++)
+            for (int i = 1; i < Number; i++)
             {
-                Console.WriteLine($"{i} * {Number} = {i * Number}");
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
             }
+
             #endregion
         }
     }
