@@ -4,16 +4,14 @@
     {
         static void Main(string[] args)
         {
-            #region Q1
-            bool Flag;
-            Console.WriteLine("please enter a integer number ");
-            Flag = int.TryParse(Console.ReadLine(), out var Number);
-            if (Flag && Number > 0)
+            #region Q2
+
+
+            Console.WriteLine("please enter an intger number");
+            int.TryParse(Console.ReadLine(), out int Number);
+            for (int i = 1; i <= 12; i++)
             {
-                for (int i = 1; i <= Number; i++)
-                {
-                    Console.WriteLine(i);
-                }
+                Console.WriteLine($"{i} * {Number} = {i * Number}");
             }
             #endregion
         }
